@@ -1,0 +1,17 @@
+tutorial: http://pythonhow.com/how-making-a-website-with-python-works
+
+url makes req to web server
+
+backend handel requests via CGI (common gateway interface)
+
+client - server model
+
+flask framework - looks for HTML files ina folder that should be called templates
+
+render_template
+The method will generate a jinja2 template object out of that HTML and return it to the browser when the user visits associated URL.
+http://jinja.pocoo.org/docs/dev/
+
+
+Wrap our heading and paragraph tags inside div tags.
+That will keep them grouped inside the same section in the HTML document so that we can later apply CSS styling to that section

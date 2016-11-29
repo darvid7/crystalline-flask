@@ -1,0 +1,28 @@
+<!-- parent HTML template for website, inherit from this-->
+
+<!DOCTYPE html>
+
+<body>
+    <!-- header section of website -->
+    <header>
+        <div class="container">
+            <h1 class="logo">David's web app</h1>
+            <strong>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="{{ url_for('home' }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                    </ul>
+                </nav>
+            </strong>
+        </div>
+    </header>
+
+    <div class ="container" >
+        <!-- stuff inside {} will be replaced by about/home html files -->
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>
