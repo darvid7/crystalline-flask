@@ -4,7 +4,7 @@ url makes req to web server
 
 backend handel requests via CGI (common gateway interface)
 
-client - server model
+client - server model # script handles com b/w these
 
 flask framework - looks for HTML files ina folder that should be called templates
 
@@ -12,6 +12,12 @@ render_template
 The method will generate a jinja2 template object out of that HTML and return it to the browser when the user visits associated URL.
 http://jinja.pocoo.org/docs/dev/
 
-
 Wrap our heading and paragraph tags inside div tags.
 That will keep them grouped inside the same section in the HTML document so that we can later apply CSS styling to that section
+
+python script = coms b/w client/server
+html = structure of pg content
+css = presentation format, static files (no interaction) --> put in static/css folder
+[brush up on css - .menu li + li ]
+
+tweak the HTML files by adding more divs if you want more sections in your webpages.

@@ -18,7 +18,7 @@ def about():
     return render_template('about.html')
 
 @app.route('/trigger/')
-def trigger():
+def triggered():
     return render_template('event-trigger.html')
 
 

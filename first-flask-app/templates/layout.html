@@ -1,6 +1,11 @@
 <!-- parent HTML template for website, inherit from this-->
 
 <!DOCTYPE html>
+<!-- link to css -->
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
 
 <body>
     <!-- header section of website -->
@@ -10,8 +15,9 @@
             <strong>
                 <nav>
                     <ul class="menu">
-                        <li><a href="{{ url_for('home' }}">Home</a></li>
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
                         <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="{{ url_for('triggered') }}">Trigger</a></li>
                     </ul>
                 </nav>
             </strong>
