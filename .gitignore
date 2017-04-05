@@ -1,3 +1,7 @@
 *.idea
 *.xml
 *.DS
+flask
+/flask
+*/flask
+../flask
