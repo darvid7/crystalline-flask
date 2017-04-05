@@ -1,0 +1,22 @@
+https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+
+Creating a microblog:
+- user management (log ins, sesssions)
+- database stuff
+- web forms
+- text search
+- email notification
+- html templates
+- multilingual support
+- caching
+- installation on a prod server
+
+## Virtual Evn
+
+- $ virtualenv flask # creates virtual environment with everything ya need [python interpreter & flask framework] :))
+
+active virtual environment --> adds location of it's bin folder to system path so when you run stuff you get
+the environment's version instead of the system's one.
+
+can invoke interpreter by specifying path name i.e. path_to_mirocblog/flask/bin/python
+

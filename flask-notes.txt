@@ -21,3 +21,18 @@ css = presentation format, static files (no interaction) --> put in static/css f
 [brush up on css - .menu li + li ]
 
 tweak the HTML files by adding more divs if you want more sections in your webpages.
+
+<!-- note: href= {{ url_for('FUNCTION_NAME') }} fn name defined in my-site.py -->
+# note: above will be attempted to be fond by flask --> leads to error, don't comment like this in html file
+
+i.e. reference event-trigger.html
+as triggered (fn name) not route name
+@app.route('/trigger/')
+def triggered():
+    return render_template('event-trigger.html')
+as rendered via jinja2
+in jinja2 <!-- --> not treated as comment so will try find the fn url_for('xxxx')
+or url_4('xxx') etc
+
+Jinja2 has no support for comments within a {{ ... }} statement. You can only use comments outside of such statements, and then only with {# .. #} or ## comment.
+http://stackoverflow.com/questions/13562222/jinja2-inline-comments

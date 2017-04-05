@@ -1,0 +1,30 @@
+virtualenv is a Python library that creates a virtual environment with an isolated Python installation.
+That installation will serve only to our flask web application, and not any other purposes. That will allow us to deploy a clean application to the online server.
+
+good to have a clean environment that does not have to do with your main Python installation
+
+The virtual environment files should be generated inside a folder that
+is at the same directory level with the folder where your app files are.
+It’s a good idea to create another folder (e.g. myblog) and put the app folder inside it.
+Then, open a  terminal/command line while you in the myblog folder and type this:
+
+tldr:
+- new folder for app
+- cd
+- create virtual env
+python –m virtualenv virtual
+
+need to install flask in virtual environment
+inside top level app folder
+
+virtual\bin\pip install flask
+
+this will install flask in virtual/lib/python3.5/site-packages
+note:
+virtual/bin/python
+opens python install in the virtual env
+
+run website in virtual env
+
+you need to point to the isolated Python and then to the my-site.py script:
+virtual/bin/python3 my-site.py
